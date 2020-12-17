@@ -1,0 +1,13 @@
+rule "Wallplug_FF_LR_TV ON"
+when
+  Item Presence_Mobile_John changed from OFF to ON
+then
+  Wallplug_FF_LR_TV.sendCommand(ON)
+end
+
+rule "Wallplug_FF_LR_TV OFF"
+when
+  Item Presence_Mobile_John changed from ON to OFF
+then
+  Wallplug_FF_LR_TV.sendCommand(OFF)
+end
