@@ -11,3 +11,10 @@ when
 then
   Wallplug_FF_LR_TV.sendCommand(OFF)
 end
+
+rule "test"
+when
+    
+then
+    
+end
